@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace TestForm
 {
     public delegate void AddText(string text);
+
     public partial class Form1 : Form
     {
 
@@ -19,6 +20,7 @@ namespace TestForm
         {
             InitializeComponent();
             run();
+            run2();
         }
         public void AppendText(string text)
         {
@@ -29,6 +31,15 @@ namespace TestForm
             }
             textBox1.Text = text + Environment.NewLine;
         }
+        public void AppendText2(string text)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action<string>(AppendText2), new object[] { text });
+                return;
+            }
+            textBox2.Text = text + Environment.NewLine;
+        }
         public void run()
         {
             AddText at = new AddText(AppendText);
@@ -36,9 +47,13 @@ namespace TestForm
             TestForm2.Tester t = new TestForm2.Tester(at);
             Thread x = new Thread(t.run);
             x.Start();
-
-
-
+        }
+        public void run2()
+        {
+            TestForm2.Tester2 t2 = new TestForm2.Tester2();
+            Thread y = new Thread(t2.run);
+            y.Start();            
+            t2.counting += AppendText2;
         }
     }
 }
@@ -62,6 +77,24 @@ namespace TestForm2
             {               
                 D(Counter());
                 Thread.Sleep(200);
+            }
+        }
+    }
+    public class Tester2
+    {
+        public event Action<string> counting;
+        int i = 0;
+
+        private string Counter()
+        {
+            return i++.ToString();
+        }
+        public void run()
+        {
+            while (i < 50)
+            {
+                counting(Counter());
+                //Thread.Sleep(200);
             }
         }
     }
