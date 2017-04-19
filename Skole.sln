@@ -112,6 +112,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoverOgKaninerClient", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoverOgKaninerServer", "Projects\Terminsprøven3S\Opgave3\Løver og Kaniner SERVER\LoverOgKaninerServer.csproj", "{B8A83788-97A7-4544-9B10-8FB0064D8E05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sockets", "Sockets\Sockets.csproj", "{B44528B1-3E8C-4FA0-8000-8B45D2594DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsol", "TestConsol\TestConsol.csproj", "{D4806BF0-09CA-41D8-98FE-83E11DFF6C52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{76579464-545E-4282-9FB4-BDDD03294095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -258,6 +264,18 @@ Global
 		{B8A83788-97A7-4544-9B10-8FB0064D8E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A83788-97A7-4544-9B10-8FB0064D8E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8A83788-97A7-4544-9B10-8FB0064D8E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44528B1-3E8C-4FA0-8000-8B45D2594DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44528B1-3E8C-4FA0-8000-8B45D2594DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44528B1-3E8C-4FA0-8000-8B45D2594DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44528B1-3E8C-4FA0-8000-8B45D2594DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4806BF0-09CA-41D8-98FE-83E11DFF6C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4806BF0-09CA-41D8-98FE-83E11DFF6C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4806BF0-09CA-41D8-98FE-83E11DFF6C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4806BF0-09CA-41D8-98FE-83E11DFF6C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76579464-545E-4282-9FB4-BDDD03294095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76579464-545E-4282-9FB4-BDDD03294095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76579464-545E-4282-9FB4-BDDD03294095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76579464-545E-4282-9FB4-BDDD03294095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,6 +327,9 @@ Global
 		{0B769F38-9815-43F9-806D-565CC888821C} = {284F3EE5-91DF-4F2E-B7E8-E9323DA395C4}
 		{E110C11B-BA99-4073-9481-014A47DF799C} = {8169A4D6-7135-4507-ABFE-08ABEC65BB6A}
 		{B8A83788-97A7-4544-9B10-8FB0064D8E05} = {8169A4D6-7135-4507-ABFE-08ABEC65BB6A}
+		{B44528B1-3E8C-4FA0-8000-8B45D2594DF7} = {EA31CDF5-5410-4D6A-9CCB-351755250B91}
+		{D4806BF0-09CA-41D8-98FE-83E11DFF6C52} = {EA31CDF5-5410-4D6A-9CCB-351755250B91}
+		{76579464-545E-4282-9FB4-BDDD03294095} = {EA31CDF5-5410-4D6A-9CCB-351755250B91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
