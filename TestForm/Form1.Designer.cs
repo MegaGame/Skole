@@ -39,7 +39,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 61);
+            this.textBox1.Size = new System.Drawing.Size(260, 192);
             this.textBox1.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -49,17 +49,17 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 100);
+            this.textBox2.Location = new System.Drawing.Point(12, 223);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(259, 71);
+            this.textBox2.Size = new System.Drawing.Size(259, 313);
             this.textBox2.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(290, 548);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";

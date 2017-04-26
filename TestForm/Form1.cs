@@ -29,7 +29,7 @@ namespace TestForm
                 Invoke(new Action<string>(AppendText), new object[] { text });
                 return;
             }
-            textBox1.Text = text + Environment.NewLine;
+            textBox1.Text += text + Environment.NewLine;
         }
         public void AppendText2(string text)
         {
@@ -38,7 +38,7 @@ namespace TestForm
                 Invoke(new Action<string>(AppendText2), new object[] { text });
                 return;
             }
-            textBox2.Text = text + Environment.NewLine;
+            textBox2.Text += text + Environment.NewLine;
         }
         public void run()
         {
@@ -52,8 +52,17 @@ namespace TestForm
         {
             TestForm2.Tester2 t2 = new TestForm2.Tester2();
             Thread y = new Thread(t2.run);
-            y.Start();            
-            t2.counting += AppendText2;
+            y.Start();
+            try
+            {
+                t2.counting += AppendText2;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
@@ -94,7 +103,7 @@ namespace TestForm2
             while (i < 50)
             {
                 counting(Counter());
-                //Thread.Sleep(200);
+                Thread.Sleep(200);
             }
         }
     }
